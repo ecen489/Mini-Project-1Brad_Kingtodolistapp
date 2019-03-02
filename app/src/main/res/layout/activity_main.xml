@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/BigView">
+
+    <LinearLayout
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="Product Points" />
+        <TextView
+            android:id="@+id/textScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="0"
+            android:paddingLeft="7dp"
+            />
+
+        <Button
+            android:id="@+id/buttonQuick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="quickButton"
+            android:text="Quick" />
+
+        <Button
+            android:id="@+id/buttonSun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="sunButton"
+            android:text="Sun" />
+
+        <Button
+            android:id="@+id/buttonMon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="monButton"
+            android:layout_weight="1"
+            android:text="Mon" />
+
+        <Button
+            android:id="@+id/buttonTues"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="tuesButton"
+            android:text="Tues" />
+
+        <Button
+            android:id="@+id/buttonWed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="wedButton"
+            android:text="Wed" />
+
+        <Button
+            android:id="@+id/buttonThur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="thurButton"
+            android:text="THUR" />
+
+        <Button
+            android:id="@+id/buttonFri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="friButton"
+            android:text="Fri" />
+
+        <Button
+            android:id="@+id/buttonSat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="satButton"
+            android:text="Sat" />
+
+        <Button
+            android:id="@+id/buttonTrash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="trashButton"
+            android:text="Trash" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="70dp"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/editTextQuickTodo"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="10"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_gravity="center"
+            android:text="" />
+
+        <Button
+            android:id="@+id/buttonDisp"
+            android:layout_height="70dp"
+            android:layout_width="match_parent"
+            android:layout_weight="17"
+            android:layout_marginTop="0dp"
+            android:text="Disp"
+            android:onClick= "quickAdd"/>
+
+        <Button
+            android:id="@+id/buttonDetailDisp"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="16"
+            android:layout_marginTop="0dp"
+            android:text="Detail Disp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/mainList"
+        android:layout_width="match_parent"
+        android:layout_height="539dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="68dp" />
+
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.example.project10.happyMarioFragment"
+        android:layout_width="122dp"
+        android:layout_height="86dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="143dp"
+        android:layout_marginTop="133dp" />
+
+    <fragment
+        android:id="@+id/fragmentSad"
+        android:name="com.example.project10.sadMarrioFrag"
+        android:layout_width="121dp"
+        android:layout_height="93dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="144dp" />
+</RelativeLayout>
